@@ -1,0 +1,26 @@
+We will use Tinker environment, enter the following on the command line on the project
+the following scrip creates the category data to database:
+// For sales
+php artisan tinker
+$category = new App\Category
+$category->name = "Sales"
+$category->save()
+exit()
+
+// for IT
+php artisan tinker
+$category = new App\Category
+$category->name = "IT"
+$category->save()
+exit()
+
+//Accounting
+php artisan tinker
+$category = new App\Category
+$category->name = "Account"
+$category->save()
+exit()
+
+-----------------------------------------
+GENERATING DUMMY DATA TO DATABSE  THEFOLLOWING COMMAND:
+php artisan db.seed
